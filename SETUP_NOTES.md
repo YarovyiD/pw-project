@@ -128,3 +128,33 @@ sudo usermod -aG docker $USER
 ### Відкрити у VS Code
 - cd ~/projects/pw-project
 - code .
+
+# Частина 5. GitHub
+### На GITHUB (браузер):
+- New repository → назва → Public → БЕЗ README/gitignore/license → Create
+- Скопіювати URL (Code → HTTPS)
+
+### ЛОКАЛЬНО (термінал, корінь проєкту):
+#### 1. Ініціалізувати git (якщо ще немає)
+- git init
+
+#### 2. Перевірити .gitignore (має бути node_modules/ тощо)
+- cat .gitignore
+
+#### 3. Додати всі файли
+- git add .
+
+#### 4. Перевірити — НЕ має бути node_modules!
+- git status
+
+#### 5. Перший коміт
+- git commit -m "Initial commit"
+
+#### 6. Перейменувати гілку на main
+- git branch -M main
+
+#### 7. Підв'язати віддалений репозиторій (свій URL!)
+ - git remote add origin https://github.com/нік/repo.git
+
+#### 8. Залити на GitHub (-u прив'язує гілку)
+- git push -u origin main
