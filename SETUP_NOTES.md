@@ -158,3 +158,7 @@ sudo usermod -aG docker $USER
 
 #### 8. Залити на GitHub (-u прив'язує гілку)
 - git push -u origin main
+ #### 9. НАДАЛІ (щоденний цикл):
+- git add .
+- git commit -m "опис змін"
+- git push
