@@ -11,6 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright:v1.63.0-jammy   # базовий образ
+    env:
+      MY_SECRET_TOKEN: ${{ secrets.MY_SECRET_TOKEN }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
